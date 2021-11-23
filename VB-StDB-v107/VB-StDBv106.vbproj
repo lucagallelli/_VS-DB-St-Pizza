@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DEE7DEC9-C3E4-4AC6-9442-55BDD58B223A}</ProjectGuid>
+    <ProjectGuid>{43B68A98-81FD-42E5-8A25-5FE46A1F3275}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>StDB201.My.MyApplication</StartupObject>
-    <RootNamespace>StDB201</RootNamespace>
-    <AssemblyName>StDB201</AssemblyName>
+    <StartupObject>StDBv106.My.MyApplication</StartupObject>
+    <RootNamespace>StDBv106</RootNamespace>
+    <AssemblyName>StDBv106</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>StDB201.xml</DocumentationFile>
+    <DocumentationFile>StDBv106.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>StDB201.xml</DocumentationFile>
+    <DocumentationFile>StDBv106.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -72,11 +72,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StDB201.vb">
+    <Compile Include="StDB106.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StDB201.Designer.vb">
-      <DependentUpon>StDB201.vb</DependentUpon>
+    <Compile Include="StDB106.Designer.vb">
+      <DependentUpon>StDB106.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -97,8 +97,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="StDB201.resx">
-      <DependentUpon>StDB201.vb</DependentUpon>
+    <EmbeddedResource Include="StDB106.resx">
+      <DependentUpon>StDB106.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

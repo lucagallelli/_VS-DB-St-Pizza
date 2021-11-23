@@ -6,7 +6,7 @@
         Public lastname As String
         Public DOB As Date
         Public gender As Char
-        Public avMk As Char
+        Public avMk As Single
         Public phoneNo As String
         Public paid As String
     End Class
@@ -23,32 +23,32 @@
         students(0).firstname = "Johnny"
         students(0).lastname = "Depp"
         students(0).DOB = "9/6/63"
-        students(0).gender = "Yes"
-        students(0).avMk = "settter"
+        students(0).gender = "m"
+        students(0).avMk = 78.2
         students(0).phoneNo = "0490487461"
         students(0).paid = False
         students(1).studID = 2
         students(1).firstname = "Jennifer"
         students(1).lastname = "Lawrence"
         students(1).DOB = "15/8/90"
-        students(1).gender = "Yes"
-        students(1).avMk = "streeeet"
+        students(1).gender = "f"
+        students(1).avMk = 88.2
         students(1).phoneNo = "0496375441"
         students(1).paid = True
         students(2).studID = 3
         students(2).firstname = "George"
         students(2).lastname = "Clooney"
         students(2).DOB = "6/5/61"
-        students(2).gender = "No"
-        students(2).avMk = "street"
+        students(2).gender = "m"
+        students(2).avMk = 68.2
         students(2).phoneNo = "0485385185"
         students(2).paid = False
         students(3).studID = 4
         students(3).firstname = "Scarlett"
         students(3).lastname = "Johansson"
         students(3).DOB = "22/11/84"
-        students(3).gender = "No"
-        students(3).avMk = "street"
+        students(3).gender = "f"
+        students(3).avMk = 72.2
         students(3).phoneNo = "0473851375"
         students(3).paid = True
         'set the student count to the number of students which have been entered
@@ -88,15 +88,15 @@
         displayList()
     End Sub
     Private Sub displayList()
+        'clear the list box as it keeps the earlier loop
         txtStList.Items.Clear()
         'loop through the array to print all rows
         For i = 0 To studentCount - 1
-            txtStList.Items.Add(students(i).studID & " - FIRST NAME: " & students(i).firstname & " - LAST NAME: " &
-                              students(i).lastname & " - Delivery Date: " & students(i).DOB & " - Delivery " &
-                              students(i).gender & " - " & students(i).avMk & " . Phone Number " &
+            txtStList.Items.Add(students(i).studID & " - " & students(i).firstname & " - " &
+                              students(i).lastname & " - " & students(i).DOB & " - " &
+                              students(i).gender & " - " & students(i).avMk & " . " &
             students(i).phoneNo & " - " & students(i).paid & ".")
         Next
-        'gender should be changed to Pick up Or delivery but it works fine'
     End Sub
 
     Private Sub txtFirstName_TextChanged(sender As Object, e As EventArgs) Handles txtFirstName.TextChanged
@@ -128,26 +128,6 @@
     End Sub
 
     Private Sub chkPaid_CheckedChanged(sender As Object, e As EventArgs) Handles chkPaid.CheckedChanged
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
-
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Process.Start("https://github.com/lucagallelli/_VS-DB-St-Pizza ")
-    End Sub
-
-    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
-        Process.Start("https://lucagallelli.github.io/_VS-DB-St-Pizza/ ")
-    End Sub
-
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
 End Class
